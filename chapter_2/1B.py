@@ -1,10 +1,11 @@
 x=list(map(int,input().split()))
-start=min(x)
-end=max(x)
-def summation(start,end):
+def summation(x):
+    minimum=min(x)
+    maximum=max(x)
+    sum=0
     k=0
-    while start!=end:
-        k+=start
-        start+=1
-    return k+end
-print(summation(start,end))
+    while minimum<=maximum:
+        k+=minimum
+        minimum+=1
+    return k
+print(summation(x))
