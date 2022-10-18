@@ -1,4 +1,5 @@
-a,b=input().split()
-def greetings(a,b):
-    return "Доброго времени суток, {},'Человек',{} ".format(a,b)
-print(greetings(a,b))
+a=input()
+def greetings(a):
+    b,c=a.split()
+    return "Доброго времени суток, {},'Человек',{} ".format(b,c)
+print(greetings(a))
